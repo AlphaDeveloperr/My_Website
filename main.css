@@ -1,0 +1,404 @@
+/* --------------------webkit-------------------- */
+
+::-webkit-scrollbar{
+    background: rgba(51, 51, 51, 0.753);
+    border-radius: 5px;
+    width: 10px;
+    text-align: center;
+}
+
+::-webkit-scrollbar-corner{
+    background: rgb(22, 22, 22);
+}
+
+::-webkit-scrollbar-thumb{
+    background: rgba(255, 68, 0, 0.493);
+    border-radius: 5px;
+    width: 4px;
+}
+
+::-webkit-scrollbar:hover {
+    background: rgba(58, 58, 58, 0.753);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 68, 0, 0.637);
+}
+
+/* --------------------general-------------------- */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    color: white;
+}
+
+body {
+    width: auto;
+    height: 283vh;
+    background: rgb(22, 22, 22);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* --------------------navbar-------------------- */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    animation-name: gel;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    justify-content: center; 
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+header ul li a {
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0.5rem 0.4rem;
+    margin-left: 2rem;
+    border-radius: 2px;
+    
+}
+
+header a.logo {
+    font-size: 1.75rem;
+    font-weight: 700;
+}
+
+header ul li a:hover {
+    border-bottom: 2px solid orangered;
+}
+
+@keyframes gel{
+    from{
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+
+}
+
+/* --------------------banner-------------------- */
+
+.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50vh;
+    margin-bottom: 12rem;
+    margin-top: 8rem;
+}
+
+#banner-text {
+    width: 35%;
+    /* animation-name: gel-sağ;
+    animation-duration: 0.7s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1; */
+}
+
+#banner-text h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+#banner-text p {
+    font-size: 1.25rem;
+}
+
+#banner-text button{
+    outline: 0;
+    border: 1px solid orangered;
+    border-radius: 20px;
+    width: 8rem;
+    height: 3rem;
+    margin: 2rem 0;
+    color: white;
+    cursor: pointer;
+    transition: 0.25s all ease-in-out;
+    background: rgb(22, 22, 22);
+}
+
+#banner-rm:hover{
+    background: rgb(255, 68, 0);
+}
+
+#banner-img {
+    background: rgb(43, 43, 43);
+    border-radius: 3rem;
+    width: 50%;
+    height: 90%;
+    /* animation-name: gel-sol;
+    animation-duration: 0.7s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1; */
+}
+
+#banner-img img {
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes gel-sağ{
+    from{
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes gel-sol{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+/* --------------------line-------------------- */
+
+.lines {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.line {
+    background: orangered;
+    width: 49%;
+    height: 2px;
+}
+
+.circle {
+    background: rgb(22, 22, 22);
+    width: 18px;
+    height: 18px;
+    border: 2px solid orangered;
+    border-radius: 18px;
+}
+
+
+/* --------------------banner2-------------------- */
+
+.banner2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50vh;
+    margin-bottom: 10rem;
+    margin-top: 12rem;
+}
+
+#banner2-text {
+    width: 35%;
+}
+
+#banner2-text h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+#banner2-text p {
+    font-size: 1.25rem;
+}
+
+#banner2-text button{
+    outline: 0;
+    border: 1px solid orangered;
+    border-radius: 20px;
+    width: 8rem;
+    height: 3rem;
+    margin: 2rem 0;
+    color: white;
+    cursor: pointer;
+    transition: 0.25s all ease-in-out;
+    background: rgb(22, 22, 22);
+}
+
+#banner2-rm:hover{
+    background: rgb(255, 68, 0);
+}
+
+#banner2-img {
+    background: rgb(43, 43, 43);
+    border-radius: 3rem;
+    width: 50%;
+    height: 90%;
+}
+
+#banner2-img img {
+    width: 100%;
+    height: 100%;
+}
+
+/* --------------------banner3-------------------- */
+
+.banner3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50vh;
+    margin-bottom: 10rem;
+    margin-top: 12rem;
+}
+
+#banner3-text {
+    width: 35%;
+    /* animation-name: gel-sağ;
+    animation-duration: 0.7s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1; */
+}
+
+#banner3-text h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+#banner3-text p {
+    font-size: 1.25rem;
+}
+
+#banner3-text button{
+    outline: 0;
+    border: 1px solid orangered;
+    border-radius: 20px;
+    width: 8rem;
+    height: 3rem;
+    margin: 2rem 0;
+    color: white;
+    cursor: pointer;
+    transition: 0.25s all ease-in-out;
+    background: rgb(22, 22, 22);
+}
+
+#banner3-rm:hover{
+    background: rgb(255, 68, 0);
+}
+
+#banner3-img {
+    background: rgb(43, 43, 43);
+    border-radius: 3rem;
+    width: 50%;
+    height: 90%;
+    /* animation-name: gel-sol;
+    animation-duration: 0.7s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1; */
+}
+
+#banner3-img img {
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes gel-sağ{
+    from{
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes gel-sol{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+/* --------------------work style-------------------- */
+
+.work-style {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rem;
+    margin-bottom: 12rem;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background: rgb(22, 22, 22);
+    width: 19rem;
+    height: 25rem;
+    padding: 1rem;
+    border-radius: 20px;
+    text-align: center;
+} 
+
+.icon {
+    margin-bottom: 4rem;
+}
+
+.icon a {
+    text-decoration: none;
+    color: orangered;
+    padding: 2rem 2.5rem;
+    border: 2px solid orangered;
+    border-radius: 100%;
+    font-size: large;
+    font-weight: 800;
+    transition: 0.25s all ease-in-out;
+}
+
+.box-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.box-text a {
+    text-decoration: none;
+    color: white;
+    margin: 1.25rem;
+    
+}
+
+.icon a:hover {
+    background: orangered;
+    color: white;
+}
